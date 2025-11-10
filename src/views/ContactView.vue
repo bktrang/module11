@@ -8,5 +8,5 @@
 </template>
 
 <script setup>
-import GoBack from '../components/GoBack.vue'
+  import GoBack from '../components/GoBack.vue'
 </script>

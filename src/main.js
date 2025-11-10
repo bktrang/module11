@@ -1,8 +1,11 @@
-import Vue from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router' // only if you’re using vue-router
+//import store from './store'   // only if you’re using Vuex
 
-Vue.config.productionTip = false;
+const app = createApp(App)
 
-new Vue({
-  render: (h) => h(App),
-}).$mount("#app");
+app.use(router) // remove if not using
+//app.use(store)  // remove if not using
+
+app.mount('#app')

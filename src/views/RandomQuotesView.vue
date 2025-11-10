@@ -8,9 +8,13 @@
 
     <!-- The button that triggers the API call -->
     <button @click="getQuote">Get New Quote</button>
+    <GoBack />
   </div>
 </template>
 
+<script setup>
+  import GoBack from '../components/GoBack.vue'
+</script>
 
 <script>
 import axios from 'axios'
